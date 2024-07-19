@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <Authors>M. Douglas Bowan II</Authors>
+	  <Copyright>M. Douglas Bowan II</Copyright>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <PackageReleaseNotes>
+		  * 202407191910  1.0.1 Comment changes, package property changes.
+	  </PackageReleaseNotes>
+	  <VersionPrefix>1.0.1</VersionPrefix>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Description>Create classes through reflection.emit</Description>
+	  <PackageProjectUrl>https://www.nuget.org/packages/Bytz.Reflection.Emit</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/Scuba-Blue/Bytz.Reflection.Emit</RepositoryUrl>
+	  <PackageLicenseFile>License.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Documents\License.txt" />
+    <None Remove="Documents\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Documents\License.txt">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bytz.Common" Version="1.0.1" />
+  </ItemGroup>
+</Project>
