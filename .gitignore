@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Bytz.Reflection.Emit/DesignTimeBuild
+/.vs/Bytz.Reflection.Emit/FileContentIndex
+/.vs/Bytz.Reflection.Emit/v18/TestStore/0
+/.vs
+/Tests.Bytz.Reflection.Emit/obj/Debug/net10.0
